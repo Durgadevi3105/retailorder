@@ -4,7 +4,7 @@
   "metadata": {
     "colab": {
       "provenance": [],
-      "authorship_tag": "ABX9TyNFBAHKZyhwpchliQYFPdgJ",
+      "authorship_tag": "ABX9TyNKGlw1vAiKmCbsejg/M9Gr",
       "include_colab_link": true
     },
     "kernelspec": {
@@ -6553,10 +6553,12 @@
         "            plt.ylabel(\"Revenue\")\n",
         "            plt.xticks(rotation=45)\n",
         "            st.pyplot(plt)\n",
-        "\n",
+        "    else:\n",
+        "        st.warning(\"No data available for this query.\")\n",
         "else:\n",
-        "  st.title(\"Welcome to the Dashboard\")\n",
-        "  st.write(\"Please select a query to view the dashboard.\")"
+        "    st.warning(\"Please select a query.\")\n",
+        "\n",
+        "st.text(\"Thank you for using the dashboard!\")"
       ],
       "metadata": {
         "id": "1CcaCC7kLvjI",
