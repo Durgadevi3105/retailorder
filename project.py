@@ -5,11 +5,11 @@ import pandas as pd
 # Function to connect to the PostgreSQL databas
 def get_db_connection():
     conn = psycopg2.connect(
-       host="dsanudb.cl44kq2oiq5z.ap-south-1.rds.amazonaws.com",
+       host="dbdurga.c7igy8goq28e.ap-south-1.rds.amazonaws.com",
         port=5432,
-        database="Mini_project",
+        database="postgres",
         user="postgres",
-        password="rootanu123"
+        password="tharshan"
     )
     return conn
     
